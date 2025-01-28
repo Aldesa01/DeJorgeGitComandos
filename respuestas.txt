@@ -4,3 +4,4 @@ cat datos.txt | grep "PROG" | wc -l
 cat datos.txt | grep "PROG$" | wc -l
 No me la se
 cat datos.txt | sed 's/.com/.net/'
+cat datos.txt | grep "-" | wc -l
