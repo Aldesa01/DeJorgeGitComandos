@@ -5,3 +5,4 @@ cat datos.txt | grep "PROG$" | wc -l
 cat datos.txt | grep ".es" | awk -F ',' '{print $2}'
 cat datos.txt | sed 's/.com/.net/'
 cat datos.txt | grep "-" | wc -l
+cat datos.txt | awk -F ',' '{if ($3 > 40) print $2, $3}'
